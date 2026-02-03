@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vehicle Speed Detection - Live Stream</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Vehicle Speed Detection Dashboard</h1>
+        <p>Live feed from IP camera with YOLOv8 tracking & speed estimation (perspective corrected)</p>
+
+        <div class="video-container">
+            <img id="video-feed" src="{{ url_for('video_feed') }}" alt="Live Video Stream" />
+        </div>
+
+        <div class="info">
+            <ul>
+                <li><strong>Calibration zone:</strong> Yellow trapezoid on video</li>
+                <li><strong>Red text:</strong> Speed in km/h (EMA smoothed)</li>
+                <li><strong>Green box:</strong> Detected & tracked vehicle</li>
+                <li>Press <kbd>ESC</kbd> in terminal to stop server</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
