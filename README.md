@@ -1,4 +1,3 @@
-```markdown
 # Vehicle Speed Detection Web Application
 
 A real-time vehicle speed detection system using computer vision, YOLOv8 tracking, and perspective transformation.  
@@ -155,3 +154,4 @@ This project is open-source and available under the MIT License.
 
 ```
 ```
+
